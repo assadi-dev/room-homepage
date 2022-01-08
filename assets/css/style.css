@@ -1,0 +1,140 @@
+.header {
+    width: 100%;
+    position: relative;
+    min-height: 550px;
+}
+
+.slider {
+    position: relative;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.slider-controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.control-btn {
+    height: 80px;
+    width: 80px;
+    color: var(--dark-gray);
+    font-size: 2rem;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ea;
+    -moz-transition: all 0.4s ea;
+    -ms-transition: all 0.4s ea;
+    -o-transition: all 0.4s ea;
+    padding: 1rem;
+}
+
+.control-btn img {
+    width: 40%;
+    height: 40%;
+}
+
+.control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.control-btn:active {
+    background-color: var(--black);
+}
+
+.slider-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s eas;
+    -moz-transition: all 0.4s eas;
+    -ms-transition: all 0.4s eas;
+    -o-transition: all 0.4s eas;
+}
+
+.current {
+    opacity: 1;
+}
+
+.articles-container {
+    width: 100%;
+}
+
+.upper-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.lower-grid {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.text-presentation {
+    padding: 2.5rem;
+    color: var(--dark-gray);
+}
+
+.articles-container article {
+    width: 100%;
+}
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 992px) {
+    .upper-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-controls {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        z-index: 10;
+    }
+}
+
+@media (max-width:768px) {
+    .upper-grid,
+    .lower-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        min-height: 100vh;
+    }
+    .control-btn {
+        height: 40px;
+        width: 40px;
+        padding: 0.75rem;
+    }
+    .control-btn img {
+        width: 80%;
+        height: 80%;
+    }
+    .slider {
+        height: 360px;
+    }
+    .slider-img {
+        height: 100%;
+    }
+}
