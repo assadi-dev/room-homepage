@@ -22,12 +22,12 @@ const data = [{
     },
 ];
 
-for (let i = 0; i < 3; i++) {
+data.forEach((element) => {
     let imgElement = document.createElement("img");
     imgElement.className = "slider-img";
-    imgElement.src = data[i].picture;
+    imgElement.src = element.picture;
     slider.append(imgElement);
-}
+});
 
 /**
  * slider actions
