@@ -26,6 +26,7 @@ data.forEach((element) => {
     let imgElement = document.createElement("img");
     imgElement.className = "slider-img";
     imgElement.src = element.picture;
+    imgElement.alt = element.title;
     slider.append(imgElement);
 });
 
