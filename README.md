@@ -26,7 +26,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 
 
-**[DEMO](https://friendly-mccarthy-0a49a6.netlify.app/)** 🚀
+**[DEMO](https://assadi-halifa-room-hompage.netlify.app/)** 🚀
 
 ### Built with
 
