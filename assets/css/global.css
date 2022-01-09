@@ -147,6 +147,10 @@ body {
     .wrapper {
         max-width: 375px;
     }
+    .sm-mx {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
 }
 
 @media screen and (max-width:550px) {}

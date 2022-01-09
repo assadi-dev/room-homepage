@@ -5,17 +5,28 @@
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 100;
     padding: 2rem 1.5rem;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    color: var(--white)
+    color: var(--white);
+    display: flex;
+    height: 80px;
 }
 
-.left-grid ul {}
+.logo {
+    margin-right: 1rem;
+    height: 100%;
+    object-fit: contain;
+}
+
+#hamburger_menu {
+    position: absolute;
+    left: 0;
+    padding: 0.85rem;
+    display: none;
+}
 
 .slider {
     position: relative;
@@ -165,6 +176,16 @@
 }
 
 @media (max-width:768px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar ul {
+        justify-content: center;
+        display: none;
+    }
+    #hamburger_menu {
+        display: block;
+    }
     .upper-grid,
     .lower-grid {
         display: flex;
