@@ -4,6 +4,19 @@
     min-height: 550px;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    color: var(--white)
+}
+
+.left-grid ul {}
+
 .slider {
     position: relative;
     color: var(--white);

@@ -1,134 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" type="text/css" href="./assets/css/global.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Frontend Mentor | Room homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
     </style>
-  </head>
-  <body>
-    <main class="wrapper mx-auto">
-      <header class="header upper-grid">
-        <div class="slider">
-          <div class="slider-controls">
-            <button
-              id="prev"
-              class="control-btn flex justify-content-center align-items-center"
-            >
-              <img
-                src="./assets/images/icons/icon-angle-left.svg"
-                alt="previous-icon"
-              />
-            </button>
-            <button
-              id="next"
-              class="control-btn flex justify-content-center align-items-center"
-            >
-              <img
-                src="./assets/images/icons/icon-angle-right.svg"
-                alt="next-icon"
-              />
-            </button>
-          </div>
-        </div>
+</head>
 
-        <div class="flex align-items-center">
-          <div class="text-presentation">
-            <h1 class="title-1 text-black mb-1">
-              Discover innovative ways to decorate
-            </h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-              perspiciatis quibusdam non repellendus, quaerat sint expedita quia
-              obcaecati et consequatur vel laudantium doloribus molestias amet
-              officia autem. Ipsam, quia explicabo? Saepe molestiae, maiores
-              ullam beatae quo, nostrum eum esse corporis quibusdam corrupti
-              velit consequatur rerum delectus sequi neque enim labore tempora
-              libero unde eius similique cupiditate aperiam sapiente nesciunt!
-              Assumenda.
-            </p>
-            <button class="shop-now flex align-items-center uppercase">
-              Shop now
-              <img
-                src="./assets/images/icons/icon-arrow.svg"
-                alt="arrow-right"
-              />
-            </button>
-          </div>
-        </div>
-      </header>
-      <section class="articles-container lower-grid">
-        <article>
-          <img
-            class="img"
-            src="./assets/images/image-about-dark.jpg"
-            alt="about dark"
-          />
-        </article>
-        <article class="flex align-items-center">
-          <div class="text-presentation">
-            <h4 class="title text-black mb-1 uppercase">About our furniture</h4>
-            <p>
-              Our multifunctional collection blends design and function to suit
-              your individual taste. Make each room unique, or pick a cohesive
-              theme that best express your interests and what inspires you. Find
-              the furniture pieces you need, from traditional to contemporary
-              styles or anything in between. Product specialists are available
-              to help you create your dream space.
-            </p>
-          </div>
-        </article>
-        <article>
-          <img
-            class="img"
-            src="./assets/images/image-about-light.jpg"
-            alt="about light"
-          />
-        </article>
-      </section>
+<body>
+
+    <main class="wrapper mx-auto">
+
+        <header class="header upper-grid">
+            <nav class="navbar ">
+                <div class="left-grid">
+                    <ul class="flex">
+                        <li>
+                            <a href="/"><img src="./assets/images/icons/logo.svg" alt="room logo "></a>
+                        </li>
+                        <li class="mx-2">home</li>
+                        <li class="mx-2">shop</li>
+                        <li class="mx-2">about</li>
+                        <li class="mx-2">contact</li>
+                    </ul>
+                </div>
+                <div class="right-grid"></div>
+            </nav>
+
+            <div class="slider">
+                <div class="slider-controls">
+                    <button id="prev" class="control-btn flex justify-content-center align-items-center">
+            <img src="./assets/images/icons/icon-angle-left.svg" alt="previous-icon" />
+          </button>
+                    <button id="next" class="control-btn flex justify-content-center align-items-center">
+            <img src="./assets/images/icons/icon-angle-right.svg" alt="next-icon" />
+          </button>
+                </div>
+            </div>
+
+            <div class="flex align-items-center">
+                <div class="text-presentation">
+                    <h1 class="title-1 text-black mb-1">
+                        Discover innovative ways to decorate
+                    </h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque perspiciatis quibusdam non repellendus, quaerat sint expedita quia obcaecati et consequatur vel laudantium doloribus molestias amet officia autem. Ipsam, quia explicabo? Saepe molestiae,
+                        maiores ullam beatae quo, nostrum eum esse corporis quibusdam corrupti velit consequatur rerum delectus sequi neque enim labore tempora libero unde eius similique cupiditate aperiam sapiente nesciunt! Assumenda.
+                    </p>
+                    <button class="shop-now flex align-items-center uppercase">
+            Shop now
+            <img src="./assets/images/icons/icon-arrow.svg" alt="arrow-right" />
+          </button>
+                </div>
+            </div>
+        </header>
+        <section class="articles-container lower-grid">
+            <article>
+                <img class="img" src="./assets/images/image-about-dark.jpg" alt="about dark" />
+            </article>
+            <article class="flex align-items-center">
+                <div class="text-presentation">
+                    <h4 class="title text-black mb-1 uppercase">About our furniture</h4>
+                    <p>
+                        Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary
+                        styles or anything in between. Product specialists are available to help you create your dream space.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <img class="img" src="./assets/images/image-about-light.jpg" alt="about light" />
+            </article>
+        </section>
     </main>
     <div class="attribution">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        href="https://www.frontendmentor.io/profile/assadi-dev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Assadi Halifa</a
-      >.
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. Coded by
+        <a href="https://www.frontendmentor.io/profile/assadi-dev" target="_blank" rel="noopener noreferrer">
+      Assadi Halifa</a>.
     </div>
-  </body>
-  <script src="./assets/js/main.js"></script>
+</body>
+<script src="./assets/js/main.js"></script>
+
 </html>
