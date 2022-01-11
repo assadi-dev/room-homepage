@@ -85,6 +85,7 @@ const removeMenu = () => {
     document.querySelector(".backdrop").remove();
     document.querySelector(".navbar").classList.remove("open");
     document.querySelector(".close").remove();
+    hamburgerBtn.style.display = "block";
 };
 const showMenu = () => {
     let open = !isOpen;
@@ -97,6 +98,7 @@ const showMenu = () => {
     span.append(img);
     nav.prepend(span);
     let backdrop = document.createElement("div");
+    hamburgerBtn.style.display = "none";
 
     backdrop.className = "backdrop";
     wrapper.append(backdrop);
