@@ -77,18 +77,34 @@ prev.addEventListener("click", prevSlider);
 /** Menu toogle action */
 const hamburgerBtn = document.querySelector("#hamburger_menu");
 const hamburgerIcon = document.querySelector("#hamburger_menu img");
+const closeBtn = document.querySelector(".close");
+
 let isOpen = false;
+
+const removeMenu = () => {
+    document.querySelector(".backdrop").remove();
+    document.querySelector(".navbar").classList.remove("open");
+    document.querySelector(".close").remove();
+};
 const showMenu = () => {
+    let open = !isOpen;
     const wrapper = document.querySelector("body");
     const nav = document.querySelector(".navbar");
+    const span = document.createElement("span");
+    let img = document.createElement("img");
+    span.className = "close";
+    img.setAttribute("src", "./assets/images/icons/icon-close.svg");
+    span.append(img);
+    nav.prepend(span);
     let backdrop = document.createElement("div");
+
     backdrop.className = "backdrop";
     wrapper.append(backdrop);
     nav.classList.add("open");
-};
-const openMenu = () => {
-    isOpen = !isOpen;
-    isOpen ? showMenu() : showMenu;
+    if (open) {
+        let btn = document.querySelector(".close");
+        btn.addEventListener("click", removeMenu);
+    }
 };
 
-hamburgerBtn.addEventListener("click", openMenu);
+hamburgerBtn.addEventListener("click", showMenu);
