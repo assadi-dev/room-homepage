@@ -78,15 +78,17 @@ prev.addEventListener("click", prevSlider);
 const hamburgerBtn = document.querySelector("#hamburger_menu");
 const hamburgerIcon = document.querySelector("#hamburger_menu img");
 let isOpen = false;
+const showMenu = () => {
+    const wrapper = document.querySelector("body");
+    const nav = document.querySelector(".navbar");
+    let backdrop = document.createElement("div");
+    backdrop.className = "backdrop";
+    wrapper.append(backdrop);
+    nav.classList.add("open");
+};
 const openMenu = () => {
     isOpen = !isOpen;
-    isOpen
-        ?
-        hamburgerIcon.setAttribute("src", "./assets/images/icons/icon-close.svg") :
-        hamburgerIcon.setAttribute(
-            "src",
-            "./assets/images/icons/icon-hamburger.svg"
-        );
+    isOpen ? showMenu() : showMenu;
 };
 
 hamburgerBtn.addEventListener("click", openMenu);
