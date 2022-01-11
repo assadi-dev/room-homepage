@@ -215,7 +215,6 @@
     }
     .navbar ul {
         justify-content: center;
-        position: fixed;
         color: var(--black);
         display: none;
     }
