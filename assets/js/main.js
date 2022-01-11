@@ -73,3 +73,20 @@ const prevSlider = () => {
 
 next.addEventListener("click", nextSlider);
 prev.addEventListener("click", prevSlider);
+
+/** Menu toogle action */
+const hamburgerBtn = document.querySelector("#hamburger_menu");
+const hamburgerIcon = document.querySelector("#hamburger_menu img");
+let isOpen = false;
+const openMenu = () => {
+    isOpen = !isOpen;
+    isOpen
+        ?
+        hamburgerIcon.setAttribute("src", "./assets/images/icons/icon-close.svg") :
+        hamburgerIcon.setAttribute(
+            "src",
+            "./assets/images/icons/icon-hamburger.svg"
+        );
+};
+
+hamburgerBtn.addEventListener("click", openMenu);
