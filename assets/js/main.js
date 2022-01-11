@@ -106,6 +106,7 @@ const showMenu = () => {
     if (open) {
         let btn = document.querySelector(".close");
         btn.addEventListener("click", removeMenu);
+        backdrop.addEventListener("click", removeMenu);
     }
 };
 
